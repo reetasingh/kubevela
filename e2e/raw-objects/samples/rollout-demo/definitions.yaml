@@ -4,7 +4,6 @@ metadata:
   name: canaries.flagger.app
 spec:
   appliesToWorkloads:
-    - podspecworkload.standard.oam.dev
     - deployments.apps
   definitionRef:
     name: canaries.flagger.app

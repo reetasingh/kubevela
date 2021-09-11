@@ -128,28 +128,6 @@ webhooks:
       service:
         name: {{ template "kubevela.name" . }}-webhook
         namespace: {{ .Release.Namespace }}
-        path: /validate-standard-oam-dev-v1alpha1-podspecworkload
-    failurePolicy: Fail
-    name: vcontainerized.kb.io
-    admissionReviewVersions:
-      - v1beta1
-      - v1
-    sideEffects: None
-    rules:
-      - apiGroups:
-          - standard.oam.dev
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-        resources:
-          - podspecworkloads
-  - clientConfig:
-      caBundle: Cg==
-      service:
-        name: {{ template "kubevela.name" . }}-webhook
-        namespace: {{ .Release.Namespace }}
         path: /validating-core-oam-dev-v1beta1-applications
     {{- if .Values.admissionWebhooks.patch.enabled  }}
     failurePolicy: Ignore

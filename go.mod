@@ -10,7 +10,7 @@ require (
 	github.com/aryann/difflib v0.0.0-20210328193216-ff5ff6dc229b
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869
 	github.com/briandowns/spinner v1.11.1
-	github.com/containerd/containerd v1.4.8
+	github.com/containerd/containerd v1.4.11
 	github.com/coreos/prometheus-operator v0.41.1
 	github.com/crossplane/crossplane-runtime v0.14.1-0.20210722005935-0b469fcc77cd
 	github.com/davecgh/go-spew v1.1.1
@@ -32,9 +32,9 @@ require (
 	github.com/imdario/mergo v0.3.12
 	github.com/kyokomi/emoji v2.2.4+incompatible
 	github.com/mitchellh/hashstructure/v2 v2.0.1
-	github.com/oam-dev/cluster-gateway v0.0.0-20210907072424-2f8720b116f8
+	github.com/oam-dev/cluster-gateway v1.1.2
 	github.com/oam-dev/terraform-config-inspect v0.0.0-20210418082552-fc72d929aa28
-	github.com/oam-dev/terraform-controller v0.2.0
+	github.com/oam-dev/terraform-controller v0.2.1
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/onsi/ginkgo v1.16.4
 	github.com/onsi/gomega v1.16.0
